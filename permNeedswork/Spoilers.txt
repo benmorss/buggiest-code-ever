@@ -1,0 +1,26 @@
+Here is a list of bugs in this app!  Note that this list may or may not entirely complete...
+
+SPOILER ALERT: Don't read this until you've tried to find and fix the bugs yourself!
+
+HTML
+* links to CSS and JS files have incorrect path.
+* jQuery link is omitted.  (Make sure you include this file before the other JS file!)
+
+CSS
+* missing semicolon
+
+PHP
+* "$TWITTER_API_URL/$params" needs a "?", not a "/"
+* imploding the $_GET arguments is misguided - you need a loop that pulls the keys and values in the array and sticks an "=" between each, before the imploding occurs
+
+JAVASCRIPT
+* misspelled "function"
+* the Tweetlicious function needs to be executed in order to return its public methods.  Surround the whole thing in parentheses and follow it with ();
+* setInterval arguments are in the wrong order
+* if you're reading in JSON, use $.getJSON(), not $.get()
+* input[name='username'] -- transpose ' and ]
+* onsubmit handler must end with return false;
+* $("tweetArea ul") -- tweetArea should be .tweetArea
+* $("input[name='username]'").html() should actually be val() -- the contents of an <input> are stored in its "value" attribute
+* $(divs[0]).html = data[0].text won't work -- you need to pass data[0].text as an argument to html().  The same bug exists elsewhere in the code
+* The placeNewTweet() function's approach is entirely misguided! Fix it!

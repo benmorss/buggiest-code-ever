@@ -1,0 +1,49 @@
+/* CSS for the Tweetlicious app */
+
+body {
+    font-size: 0.8em;
+    margin: 10px;
+    color: #333
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.title {
+    color: #44C;
+}
+
+.label {
+    font-size: 0.9em;
+}
+
+.tweetArea .label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.tweetArea .label span {
+    color: #44C;
+}
+
+.choices {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #88B;
+    padding: 2px;
+    width: 400px;
+}
+
+.tweetArea {
+    border: 2px solid #88B;
+    padding: 3px;
+    width: 800px;
+}
+
+.tweetArea div {
+    border: 1px solid #448;
+    margin: 10px 0 10px 0;
+    padding: 3px;
+}
+
+.tweetArea .label {
+    border: 0 none;
+}
